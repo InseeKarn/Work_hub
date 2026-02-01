@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Calendar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <span class="sidebar-title">📅 My App</span>
+        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+      </div>
+
+      <nav class="sidebar-menu">
+        <a href="schedule.html" class="active">Schedule</a>
+        <a href="#">Tasks</a>
+        <a href="#">Projects</a>
+        <a href="#">Settings</a>
+      </nav>
+    </aside>
+
+    <main class="calendar">
+      <div class="calendar-header">
+        <button id="prev">&lt;</button>
+        <h2 id="month-year">February 2026</h2>
+        <button id="next">&gt;</button>
+      </div>
+
+      <!-- วันในสัปดาห์ -->
+      <div class="calendar-weekdays">
+        <div>Sun</div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+      </div>
+
+      <!-- ช่องวันที่ -->
+      <div class="calendar-days" id="calendar-days">
+        <!-- JS จะใส่วันที่ตรงนี้ -->
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
